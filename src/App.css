@@ -1,0 +1,60 @@
+/* Import Futuristic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+/* CSS Custom Properties - New Vibrant Theme */
+:root {
+  /* Your New Color Palette */
+  --dark-purple: #151039;
+  --neon-blue: #97fefc;
+  --light-purple: #3f38aa;
+  --slightly-lighter-purple: #241c61;
+  --neon-pink: #d98af4;
+  
+  /* Primary Colors (mapped for easier use) */
+  --primary-dark: var(--dark-purple);
+  --primary-purple: var(--slightly-lighter-purple);
+  --secondary-purple: var(--light-purple);
+  --accent-cyan: var(--neon-blue);
+  --accent-green: #39ff14; /* Keeping the green neon you like */
+  --accent-pink: var(--neon-pink);
+  --accent-blue: var(--neon-blue);
+  
+  /* Glass Morphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(151, 254, 252, 0.2); /* Using neon blue for borders */
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+  
+  /* Typography */
+  --font-heading: 'Orbitron', monospace;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
+  
+  /* Spacing */
+  --section-padding: 5rem 2rem;
+  --container-max-width: 1200px;
+  
+  /* Animation */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-body);
+  background: var(--primary-dark);
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
